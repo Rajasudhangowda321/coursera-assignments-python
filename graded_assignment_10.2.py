@@ -7,7 +7,7 @@ count=dict()
 for line in handle:
     if line.startswith('From '):
         l=line.split()
-        u=l[5].split(':')
+        u=l[5].split(':')#here double split is done
         u=u[0]
         count[u]=count.get(u,0)+1
         s=sorted([(k,v)for k,v in count.items()])
