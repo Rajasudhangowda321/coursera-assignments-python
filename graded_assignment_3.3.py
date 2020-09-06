@@ -7,17 +7,17 @@
 #< 0.6 F
 #If the user enters a value out of range, print a suitable error message and exit. For the test, enter a score of 0.85.
 score=input("Enter score:")
-score1=float(score)
-if (score1>=0.0)&(score1<=1.0):
-    if score1>=0.9:
+flt_score=float(score)#here input is converted to float
+if (flt_score>=0.0)&(flt_score<=1.0):#here limiting the range from 0.0 to 1.0 if its out of range it gives error message.
+    if flt_score>=0.9:
         print('A')
-    elif score1>=0.8:
+    elif flt_score>=0.8:
         print('B')
-    elif score1>=0.7:
+    elif flt_score>=0.7:
         print('C')
-    elif score1>=0.6:
+    elif flt_score>=0.6:
         print('D')
-    elif score1<0.6:
+    elif flt_score<0.6:
         print('F')
 else:
     print("error")
