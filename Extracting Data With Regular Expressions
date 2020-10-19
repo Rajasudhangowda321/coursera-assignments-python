@@ -1,0 +1,15 @@
+#This problem is to extract the numbers from the given text and count the overall numbers and add them.
+import re
+file=open('file2.py')
+total=0
+count=0
+for line in file:
+    line.rstrip()
+    regex=re.findall('[0-9]+',line)#regex code to extract numbers
+    for i in regex:#when regex find the number it will be in the list of strings so we use for loop to enter to the list and convert them to intergers.
+        count+=1#to count the numbers
+        flt=float(i)
+        i=int(flt)
+        total=total+i
+print(count)
+print(total)
